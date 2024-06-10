@@ -1,5 +1,3 @@
-import sys
-
 import pygame
 import tkinter.messagebox as tks
 window_x = 1200
@@ -43,9 +41,9 @@ if __name__ == '__main__':
         pygame.display.update()
         for i in things:
             screen.blit(i.png, (i.x, i.my))
-            i.move(0, 0.1)
+            i.move(0, 0.3)
 
         if things[0].my > 700:
-            tks.showerror('errow', '你的电脑性能太低无法所以550W')
+            tks.showerror('errow', '你的电脑性能太低无法带动550W')
             exit()
-            q()
+        q()
